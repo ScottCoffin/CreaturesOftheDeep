@@ -1,0 +1,211 @@
+\documentclass[10pt]{article}
+
+\usepackage[letterpaper,margin=0.32in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{enumitem}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=1.1em,labelsep=0.4em,itemsep=1.3pt,topsep=2pt,parsep=0pt}
+
+% W.E.T. LAB card palette.
+\definecolor{agencyblue}{HTML}{005A8B}
+\definecolor{deepsea}{HTML}{143B5D}
+\definecolor{labline}{HTML}{A9BBC8}
+\definecolor{panelbg}{HTML}{F6F8FA}
+\definecolor{titlebg}{HTML}{EAF2F7}
+\definecolor{textgray}{HTML}{2F3B45}
+
+\color{textgray}
+\tcbset{
+  sharp corners,
+  boxrule=0.55pt,
+  colframe=deepsea,
+  colback=white,
+  left=6pt,
+  right=6pt,
+  top=4pt,
+  bottom=14pt,
+  enhanced
+}
+
+\newcommand{\TaskCard}[3]{%
+\begin{tcolorbox}[
+  height=2.37in,
+  valign=center,
+  overlay={
+    \fill[titlebg] ([yshift=-0.35in]frame.north west) rectangle (frame.north east);
+    \draw[labline,line width=0.35pt] ([yshift=-0.35in]frame.north west) -- ([yshift=-0.35in]frame.north east);
+    \fill[panelbg] (frame.south west) rectangle ([yshift=0.19in]frame.south east);
+    \draw[labline,line width=0.35pt] ([yshift=0.19in]frame.south west) -- ([yshift=0.19in]frame.south east);
+    \draw[labline,line width=0.35pt] ([xshift=-0.60in]frame.south east) -- ([xshift=-0.60in,yshift=0.19in]frame.south east);
+    \node[anchor=north west,font=\fontsize{7.0}{7.5}\selectfont\bfseries\color{agencyblue}] at ([xshift=5pt,yshift=-4pt]frame.north west) {W.E.T. LAB | CETACEAN CONDITIONING UNIT};
+    \node[anchor=north east,font=\fontsize{7.6}{8.0}\selectfont\bfseries\color{deepsea}] at ([xshift=-5pt,yshift=-4pt]frame.north east) {TASK~#1};
+    \node[anchor=center,font=\fontsize{5.9}{6.3}\selectfont\bfseries\color{deepsea}] at ([xshift=1.62in,yshift=0.095in]frame.south west) {Approved cues: GOOD DOLPHIN / BAD DOLPHIN};
+    \node[anchor=center,font=\fontsize{5.4}{5.9}\selectfont\color{agencyblue}] at ([xshift=-0.30in,yshift=0.095in]frame.south east) {CCU-744-#1};
+  }
+]
+\vspace*{0.17in}
+\vfill
+\begin{minipage}[c][1.02in][c]{0.84\linewidth}
+\centering
+{\bfseries\fontsize{10.9}{11.6}\selectfont\color{deepsea} #2\par}
+\vspace{6pt}
+{\fontsize{7.7}{8.2}\selectfont\bfseries\color{agencyblue}TARGET BEHAVIOR\par}
+\vspace{4pt}
+\begingroup
+\fontsize{9.0}{10.1}\selectfont
+\setlength{\parskip}{2.2pt}
+\def\item{\par}
+#3
+\par
+\endgroup
+\end{minipage}
+\vfill
+\end{tcolorbox}%
+}
+
+\begin{document}
+\small
+
+\begin{tcbraster}[
+  raster columns=2,
+  raster column skip=6pt,
+  raster row skip=6pt
+]
+\TaskCard{01}{The Social Butterfly}{
+\item High-five \textbf{3 different people}.
+}
+\TaskCard{02}{Fashion Evolution}{
+\item Put on \textbf{hat + sunglasses}.
+}
+\TaskCard{03}{Baton Ceremony}{
+\item Pick up baton.
+\item Hand it to a stranger.
+\item Receive it back.
+}
+\TaskCard{04}{Percussionist}{
+\item Play \textbf{drum or maraca}.
+\item Continue for at least 5 beats.
+}
+\TaskCard{05}{Dramatic Entrance}{
+\item Leave the area.
+\item Re-enter dramatically.
+}
+\TaskCard{06}{The Recruiter}{
+\item Bring \textbf{one new person} back to the team.
+}
+\TaskCard{07}{Hydration Protocol}{
+\item Obtain a drink.
+\item Take one sip.
+}
+\TaskCard{08}{Interpretive Dance}{
+\item Perform a 5-second dance.
+\item Use the hand fan.
+}
+\end{tcbraster}
+
+\newpage
+
+\begin{tcbraster}[
+  raster columns=2,
+  raster column skip=6pt,
+  raster row skip=6pt
+]
+\TaskCard{09}{The Messenger}{
+\item Deliver a message to someone across the room.
+}
+\TaskCard{10}{Sunglass Transfer}{
+\item Put on sunglasses.
+\item Give them to someone else.
+}
+\TaskCard{11}{The Parade Leader}{
+\item Lead a line of \textbf{2 people}.
+\item March for at least 3 steps.
+}
+\TaskCard{12}{Object Collector}{
+\item Gather \textbf{2 different objects}.
+\item Bring them back.
+}
+\TaskCard{13}{Freeze Frame}{
+\item Pose like a statue for 5 seconds.
+}
+\TaskCard{14}{Sound Maker}{
+\item Make any non-verbal noise.
+\item Repeat 3 times.
+}
+\TaskCard{15}{The Exchange}{
+\item Trade one item with someone.
+\item Bring back the new item.
+}
+\TaskCard{16}{Hat Relay}{
+\item Wear a hat.
+\item Pass it to 2 different people.
+}
+\end{tcbraster}
+
+\newpage
+
+\begin{tcbraster}[
+  raster columns=2,
+  raster column skip=6pt,
+  raster row skip=6pt
+]
+\TaskCard{17}{The Spiral}{
+\item Spin in a circle.
+\item Then sit or crouch.
+}
+\TaskCard{18}{The Escort}{
+\item Guide someone by gesture.
+\item Bring them back to the team.
+}
+\TaskCard{19}{The Performer}{
+\item Use drum or maraca.
+\item Get at least 1 person to join.
+}
+\TaskCard{20}{The Scientist}{
+\item Point at 3 different people.
+\item Observe them like specimens.
+}
+\TaskCard{21}{The Mirror}{
+\item Copy another person's movement.
+\item Continue for 5 seconds.
+}
+\TaskCard{22}{Fan Operator}{
+\item Use hand fan on someone.
+\item Continue for 3 seconds.
+}
+\TaskCard{23}{The Trade Route}{
+\item Take an object from Team A.
+\item Deliver it to Team B.
+}
+\TaskCard{24}{The Return Mission}{
+\item Leave the team.
+\item Touch a wall or object.
+\item Return.
+}
+\end{tcbraster}
+
+\newpage
+
+\begin{tcbraster}[
+  raster columns=2,
+  raster column skip=6pt,
+  raster row skip=6pt
+]
+\TaskCard{25}{The Mystery Object}{
+\item Pick up a random object.
+\item Present it to the team.
+}
+\TaskCard{26}{The Mating Display}{
+\item Kiss someone.
+\item Cheek is fine.
+}
+\end{tcbraster}
+
+\end{document}

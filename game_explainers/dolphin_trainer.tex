@@ -1,0 +1,169 @@
+\documentclass[10pt]{article}
+
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{setspace}
+
+% Agency-style palette and document rhythm.
+\definecolor{agencyblue}{HTML}{005A8B}
+\definecolor{deepsea}{HTML}{143B5D}
+\definecolor{labline}{HTML}{A9BBC8}
+\definecolor{panelbg}{HTML}{F6F8FA}
+\definecolor{titlebg}{HTML}{EAF2F7}
+\definecolor{textgray}{HTML}{2F3B45}
+
+\pagecolor{white}
+\pagestyle{empty}
+\color{textgray}
+\setstretch{0.99}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2.5pt}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\setlist[itemize]{leftmargin=1.15em,labelsep=0.5em,itemsep=2pt,topsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=1.25em,labelsep=0.5em,itemsep=2pt,topsep=2pt,parsep=0pt}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\newtcolorbox{labbox}[2][]{
+  colback=panelbg,
+  colframe=labline,
+  colbacktitle=titlebg,
+  coltitle=deepsea,
+  fonttitle=\bfseries\small,
+  title=\MakeUppercase{#2},
+  boxrule=0.5pt,
+  arc=0pt,
+  left=7pt,
+  right=7pt,
+  top=5pt,
+  bottom=5pt,
+  toptitle=3pt,
+  bottomtitle=3pt,
+  #1
+}
+
+\begin{document}
+\small
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=deepsea,
+  boxrule=0.9pt,
+  arc=0pt,
+  left=8pt,
+  right=8pt,
+  top=8pt,
+  bottom=7pt
+]
+\begin{minipage}[c]{0.17\textwidth}
+\centering
+\includegraphics[width=1.00\linewidth]{logo_small.png}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.78\textwidth}
+{\scriptsize\textbf{\color{agencyblue}W.E.T. LAB FIELD OPERATIONS UNIT}}\par
+\vspace{2pt}
+{\Large\bfseries\color{deepsea}Station 744 Dolphin Trainer Assay}\par
+\vspace{2pt}
+{\small Cetacean Reinforcement Trial | Behavioral Conditioning Protocol}
+\end{minipage}
+
+\vspace{7pt}
+{\footnotesize
+\rowcolors{1}{titlebg}{white}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries\color{deepsea}}l Y >{\bfseries\color{deepsea}}l Y@{}}
+Program & Cetacean behavior and reinforcement testing & Status & Internal use only \\
+Required subject & Assigned Dolphin role participant & Award & \$300 research funding \\
+\end{tabularx}}
+\end{tcolorbox}
+
+\vspace{6pt}
+
+\begin{minipage}[t]{0.485\textwidth}
+\vspace{0pt}
+\begin{labbox}{Study Objective}
+Guide a dolphin subject through a sequence of target behaviors using only minimal reinforcement cues and efficient team coordination.
+\end{labbox}
+
+\begin{labbox}{Experimental System}
+\begin{itemize}
+\item Research lab = team
+\item Dolphin = designated subject organism
+\item Trainers = all remaining teammates
+\item Task cards = target behavior sequence
+\item Fastest successful completion = winning trial
+\end{itemize}
+\end{labbox}
+
+\begin{labbox}{Protocol}
+\begin{enumerate}
+\item Confirm that one team member with the Dolphin role serves as the subject.
+\item Draw three task cards at the station; each team may swap one card with the opposing team before the start.
+\item Trainers may communicate only with approved conditioning phrases.
+\item First team to complete all three task cards successfully wins the assay.
+\end{enumerate}
+\end{labbox}
+
+\begin{labbox}{Operational Setup}
+\begin{itemize}
+\item Two labs compete head-to-head.
+\item The dolphin performs while teammates act as trainers.
+\item Common station props may include hats, sunglasses, a baton, a fan, and percussion items.
+\item Tasks often require interaction with nearby specimens in the room.
+\end{itemize}
+\end{labbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\textwidth}
+\vspace{0pt}
+\begin{labbox}{Conditioning Signals}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}l Y@{}}
+\toprule
+Cue & Research equivalent \\
+\midrule
+Good dolphin & Positive reinforcement \\
+Bad dolphin & Corrective feedback \\
+Task card & Target behavior \\
+Finished task & Successful conditioning event \\
+\bottomrule
+\end{tabularx}
+\end{labbox}
+
+\begin{labbox}{Task Deck Profile}
+\begin{itemize}
+\item Social behaviors: high-fives, compliments, leading a short parade.
+\item Object work: baton exchange, gathering two objects, hat or sunglasses transfer.
+\item Performance behaviors: dramatic entrance, freeze frame, hand-fan dance, maraca beats.
+\item Communication behaviors: deliver a message, recruit a new person, copy another movement.
+\end{itemize}
+\end{labbox}
+
+\begin{labbox}{Observational Notes}
+Watch for rapid cue interpretation, trainer coordination, subject improvisation, and whether the dolphin recruits bystanders more efficiently than the opposing lab.
+\end{labbox}
+
+\begin{labbox}{Compliance Notes}
+Only approved cue phrases may be spoken by trainers. Physical coercion is not permitted; tasks must be completed through signaling, gesture, and dolphin initiative.
+\end{labbox}
+\end{minipage}
+
+\vspace{6pt}
+
+\begin{labbox}{Outcome}
+Winning lab demonstrates \textbf{superior behavioral conditioning, cue discipline, and cetacean-handler coordination}. Award disbursement: \textbf{\$300 research funding}.
+\end{labbox}
+
+\vfill
+\begin{center}
+\footnotesize\color{agencyblue}\textbf{W.E.T. LAB | Station 744 | Internal Use Only}
+\end{center}
+
+\end{document}

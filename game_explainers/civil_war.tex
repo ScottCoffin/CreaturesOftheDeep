@@ -1,0 +1,168 @@
+\documentclass[12pt]{article}
+
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{setspace}
+
+% Agency-style palette and document rhythm.
+\definecolor{agencyblue}{HTML}{005A8B}
+\definecolor{deepsea}{HTML}{143B5D}
+\definecolor{labline}{HTML}{A9BBC8}
+\definecolor{panelbg}{HTML}{F6F8FA}
+\definecolor{titlebg}{HTML}{EAF2F7}
+\definecolor{textgray}{HTML}{2F3B45}
+
+\pagecolor{white}
+\pagestyle{empty}
+\color{textgray}
+\setstretch{0.99}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.1}
+\setlist[itemize]{leftmargin=1.15em,labelsep=0.5em,itemsep=2pt,topsep=2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=1.25em,labelsep=0.5em,itemsep=2pt,topsep=2pt,parsep=0pt}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\newtcolorbox{labbox}[2][]{
+  colback=panelbg,
+  colframe=labline,
+  colbacktitle=titlebg,
+  coltitle=deepsea,
+  fonttitle=\bfseries\small,
+  title=\MakeUppercase{#2},
+  boxrule=0.5pt,
+  arc=0pt,
+  left=7pt,
+  right=7pt,
+  top=5pt,
+  bottom=5pt,
+  toptitle=3pt,
+  bottomtitle=3pt,
+  #1
+}
+
+\begin{document}
+\small
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=deepsea,
+  boxrule=0.9pt,
+  arc=0pt,
+  left=8pt,
+  right=8pt,
+  top=8pt,
+  bottom=7pt
+]
+\begin{minipage}[c]{0.17\textwidth}
+\centering
+\includegraphics[width=1.20\linewidth]{logo_small.png}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.78\textwidth}
+{\scriptsize\textbf{\color{agencyblue}W.E.T. LAB FIELD OPERATIONS UNIT}}\par
+\vspace{2pt}
+{\Large\bfseries\color{deepsea}Station 744 Competitive Feeding Assay}\par
+\vspace{2pt}
+{\small Rapid Pelagic Resource Competition Simulation | Civil War Protocol}
+\end{minipage}
+
+\vspace{7pt}
+{\footnotesize
+\rowcolors{1}{titlebg}{white}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries\color{deepsea}}l Y >{\bfseries\color{deepsea}}l Y@{}}
+Program & Pelagic behavior and survivorship testing & Status & Internal use only \\
+Study type & Head-to-head resource depletion trial & Award & \$200 research funding \\
+\end{tabularx}}
+\end{tcolorbox}
+
+\vspace{6pt}
+
+\begin{minipage}[t]{0.485\textwidth}
+\vspace{0pt}
+\begin{labbox}{Study Objective}
+This assay evaluates \textbf{competitive feeding behavior} among marine populations operating under constrained nutrient access.
+\end{labbox}
+
+\begin{labbox}{Experimental System}
+\begin{itemize}
+\item Marine populations = teams
+\item Nutrient reservoirs = cups
+\item Plankton slurry = beverage
+\item Feeding success = successful shots
+\end{itemize}
+\end{labbox}
+
+\begin{labbox}{Protocol}
+\begin{enumerate}
+\item Initiate feeding attempts.
+\item On a successful shot, the opposing participant absorbs the beverage and the matched reservoir is removed.
+\item Continue until one population has no remaining reservoirs.
+\end{enumerate}
+\end{labbox}
+
+\begin{labbox}{Operational Setup}
+\begin{itemize}
+\item Two populations compete head-to-head.
+\item Reservoirs are arranged in a triangular formation.
+\item Each participant is assigned a feeding position.
+\item All participants may shoot continuously.
+\end{itemize}
+\end{labbox}
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\textwidth}
+\vspace{0pt}
+
+
+\begin{labbox}{Terminology}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}l Y@{}}
+\toprule
+Standard term & Research equivalent \\
+\midrule
+Shoot & Initiate feeding attempt \\
+Hit & Successful nutrient capture \\
+Miss & Inefficient foraging \\
+Drink & Absorb nutrients \\
+\bottomrule
+\end{tabularx}
+\end{labbox}
+
+\begin{labbox}{Observational Notes}
+Monitor for cooperative feeding, coordination breakdown, false-confidence effects, and full ecosystem collapse events.
+\end{labbox}
+
+\begin{labbox}{Outcome}
+The winning population demonstrates \textbf{superior trophic efficiency and adaptive feeding strategy}. Award disbursement: \textbf{\$200 research funding}.
+\end{labbox}
+
+\begin{labbox}[colback=white,colframe=deepsea]{Containment Advisory}
+\begin{minipage}[c]{0.16\linewidth}
+\centering
+\includegraphics[width=0.85\linewidth]{../images/biohazard-logo.png}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.80\linewidth}
+\raggedright
+Potential side effects of excessive plankton consumption include decreased coordination, inflated confidence, and spontaneous mating behavior.
+\end{minipage}
+\end{labbox}
+\end{minipage}
+
+\vspace{6pt}
+
+\vfill
+\begin{center}
+\footnotesize\color{agencyblue}\textbf{W.E.T. LAB | Station 744 | Internal Use Only}
+\end{center}
+
+\end{document}

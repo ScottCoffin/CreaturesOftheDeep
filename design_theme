@@ -1,0 +1,175 @@
+Here’s a **design system + print spec** so your station sheet looks like a legit NOAA/USGS field protocol.
+
+---
+
+# 🎨 W.E.T. LAB — Visual Design Spec
+
+## 1) Page Setup
+
+* **Size:** Letter (8.5" × 11")
+* **Margins:** 0.5" all sides
+* **Layout:** Single column
+* **Background:** very light blue tint (optional)
+
+**Background color (optional):**
+
+* `#F4FAFC` (subtle ocean wash)
+
+---
+
+## 2) Color Palette (Agency-Style)
+
+| Use              | Color            | Hex       |
+| ---------------- | ---------------- | --------- |
+| Primary Navy     | Deep ocean       | `#0B3C5D` |
+| Secondary Blue   | Teal-blue        | `#1F6F8B` |
+| Accent Teal      | Marine highlight | `#2CA6A4` |
+| Light Background | Paper tint       | `#F4FAFC` |
+| Divider Gray     | Neutral          | `#C9D6DF` |
+
+---
+
+## 3) Typography
+
+### Header Font (Agency feel)
+
+* **Montserrat SemiBold**
+* ALL CAPS
+* Tracking: +30
+
+### Body Font
+
+* **Source Sans 3** (or Arial fallback)
+
+### Hierarchy
+
+| Element         | Size     | Style                |
+| --------------- | -------- | -------------------- |
+| Title           | 18–20 pt | Montserrat, ALL CAPS |
+| Section Headers | 12–14 pt | Montserrat Bold      |
+| Body            | 10–11 pt | Source Sans          |
+| Table text      | 10 pt    | Source Sans          |
+
+---
+
+## 4) Header Block (Top of Page)
+
+Format like a federal document:
+
+```
+W.E.T. LAB — STATION 744
+Rapid Pelagic Resource Competition Simulation
+(Civil War Protocol)
+```
+
+Style:
+
+* Navy text (`#0B3C5D`)
+* Thin divider line underneath
+
+---
+
+## 5) Section Styling
+
+Each section should have:
+
+* Bold header in navy
+* Thin divider line below (`#C9D6DF`)
+* Slight spacing (6–10 pt)
+
+---
+
+## 6) Divider Lines
+
+Use subtle lines to create structure:
+
+* Thickness: 1 pt
+* Color: `#C9D6DF`
+
+---
+
+## 7) Table Styling (Terminology Section)
+
+* Header row background: `#E6F2F5`
+* Borders: light gray
+* Keep clean and minimal
+
+---
+
+## 8) Callout Boxes
+
+Use for:
+
+* ⚠ Containment Advisory
+* 🧠 Observational Notes
+
+Style:
+
+* Light fill: `#EAF4F7`
+* Left border: 3–4 pt in `#2CA6A4`
+* Slight padding
+
+---
+
+## 9) Footer (Optional but HIGHLY recommended)
+
+```
+W.E.T. LAB | West Sacramento Experimental Trophic Laboratory
+Station 744 Field Protocol — Internal Use Only
+```
+
+* Small font (8–9 pt)
+* Light gray (`#7A8A96`)
+* Centered
+
+---
+
+## 10) Subtle “Official” Touches (High Impact)
+
+Add 1–2 of these:
+
+### Option A — Seal watermark
+
+* Place your WET LAB logo at **5–10% opacity**
+* Centered behind text
+
+### Option B — Document code
+
+Bottom right:
+
+```
+DOC ID: WET-744-RPRS-01
+REV: 1.0
+```
+
+### Option C — Timestamp
+
+```
+ISSUED: [Party Date]
+```
+
+---
+
+## 11) Final Look Target
+
+You’re aiming for:
+
+> NOAA field protocol
+>
+> * USGS report
+> * slightly unhinged marine science
+
+Clean, official… but absurd if you read it.
+
+---
+
+## 12) Quick Build Instructions (Google Docs)
+
+1. Set page color → `#F4FAFC`
+2. Add header text in Montserrat
+3. Insert horizontal line
+4. Use bold section headers
+5. Add light callout boxes
+6. Insert table for terminology
+7. Add footer text
+
