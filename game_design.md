@@ -26,6 +26,7 @@ Each team (“lab”) must:
 - win mini-games (experiments)
 - discover hidden funding
 - deliver a compelling research proposal
+- earn a completion bonus of **+$100** for finishing all mini-games
 
 💰 The lab with the **highest total funding** wins.
 
@@ -131,6 +132,8 @@ All games are:
 - Self-run using station instructions
 - Recorded in PI's notebook
 
+Teams that complete all mini-games receive an additional **+$100 completion bonus**.
+
 ---
 
 ### Game List
@@ -171,6 +174,7 @@ All currency is in **$100 increments**
 
 Sources:
 - Mini-games
+- All mini-games completed bonus (+$100)
 - Hidden discoveries
 - Proposal awards
 
@@ -226,7 +230,7 @@ This is well-defined enough that I can confidently fill this in without needing 
 
 ---
 
-### 🍺 Civil War Game
+### 🍺 Competitive Feeding Assay
 #### Estimated time to play:
 5–8 minutes per match  
 

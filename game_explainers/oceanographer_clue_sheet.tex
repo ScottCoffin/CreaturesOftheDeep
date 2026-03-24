@@ -1,0 +1,76 @@
+\documentclass[10pt]{article}
+
+\usepackage[a4paper,margin=0.28in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage[most]{tcolorbox}
+\usepackage{setspace}
+
+\definecolor{agencyblue}{HTML}{005A8B}
+\definecolor{deepsea}{HTML}{143B5D}
+\definecolor{labline}{HTML}{A9BBC8}
+\definecolor{panelbg}{HTML}{F6F8FA}
+\definecolor{titlebg}{HTML}{EAF2F7}
+\definecolor{textgray}{HTML}{2F3B45}
+
+\pagecolor{white}
+\pagestyle{empty}
+\color{textgray}
+\setstretch{0.98}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.0}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\newtcolorbox{cluecard}[1][]{
+  enhanced,
+  colback=panelbg,
+  colframe=labline,
+  colbacktitle=titlebg,
+  coltitle=deepsea,
+  fonttitle=\bfseries\small,
+  title=\MakeUppercase{Oceanographer Clue},
+  boxrule=0.6pt,
+  arc=0pt,
+  left=6pt,
+  right=6pt,
+  top=4pt,
+  bottom=4pt,
+  toptitle=2pt,
+  bottomtitle=2pt,
+  width=\linewidth,
+  height=1.74in,
+  valign=top,
+  #1
+}
+
+\newcommand{\blankcluecard}{
+  \begin{cluecard}
+  \rule{\linewidth}{0.5pt}\par
+  \vspace*{0.25in}
+  \rule{\linewidth}{0.5pt}\par
+  \vspace*{0.25in}
+  \rule{\linewidth}{0.5pt}\par
+  \end{cluecard}
+}
+
+\begin{document}
+\small
+
+\begin{tabularx}{\textwidth}{@{}Y Y@{}}
+\blankcluecard & \blankcluecard \\
+\blankcluecard & \blankcluecard \\
+\blankcluecard & \blankcluecard \\
+\blankcluecard & \blankcluecard \\
+\blankcluecard & \blankcluecard \\
+\blankcluecard & \blankcluecard \\
+\end{tabularx}
+
+\end{document}

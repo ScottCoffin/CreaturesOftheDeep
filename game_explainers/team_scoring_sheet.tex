@@ -1,0 +1,164 @@
+\documentclass[12pt]{extarticle}
+
+\usepackage[a5paper,margin=0.24in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage[most]{tcolorbox}
+\usepackage{setspace}
+
+\definecolor{agencyblue}{HTML}{005A8B}
+\definecolor{deepsea}{HTML}{143B5D}
+\definecolor{labline}{HTML}{A9BBC8}
+\definecolor{panelbg}{HTML}{F6F8FA}
+\definecolor{titlebg}{HTML}{EAF2F7}
+\definecolor{textgray}{HTML}{2F3B45}
+
+\pagecolor{white}
+\pagestyle{empty}
+\color{textgray}
+\setstretch{0.95}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{2.8pt}
+\renewcommand{\arraystretch}{1.12}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}p{0.18\linewidth}}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\newtcolorbox{labbox}[2][]{
+  colback=panelbg,
+  colframe=labline,
+  colbacktitle=titlebg,
+  coltitle=deepsea,
+  fonttitle=\bfseries\small,
+  title=\MakeUppercase{#2},
+  boxrule=0.5pt,
+  arc=0pt,
+  left=4pt,
+  right=4pt,
+  top=3pt,
+  bottom=3pt,
+  toptitle=1.5pt,
+  bottomtitle=1.5pt,
+  #1
+}
+
+\newcommand{\checkbox}{\fbox{\rule{0pt}{0.75em}\rule{0.75em}{0pt}}}
+
+\begin{document}
+\scriptsize
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=deepsea,
+  boxrule=0.9pt,
+  arc=0pt,
+  left=7pt,
+  right=7pt,
+  top=6pt,
+  bottom=5pt
+]
+\begin{minipage}[c]{0.14\textwidth}
+\centering
+\includegraphics[width=\linewidth]{../images/logo_small.png}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.82\textwidth}
+{\scriptsize\textbf{\color{agencyblue}W.E.T. LAB FIELD OPERATIONS UNIT}}\par
+\vspace{5pt}
+{\large\bfseries\color{deepsea}Team Scoring Sheet}\par
+\end{minipage}
+\end{tcolorbox}
+
+\vspace{3pt}
+
+\begin{labbox}{Lab Record}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\color{deepsea}}l Y >{\bfseries\color{deepsea}}l Y@{}}
+Lab name & \hrulefill & Team size & \hrulefill \\
+Recorder & \hrulefill & Final checker & \hrulefill \\
+Members & \multicolumn{3}{l@{}}{\hrulefill} \\
+\end{tabularx}
+\end{labbox}
+
+\vspace{3pt}
+
+\begin{labbox}{Mini-Game Match Log}
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.28\linewidth}p{0.20\linewidth}p{0.15\linewidth}Y p{0.13\linewidth}@{}}
+\toprule
+\textbf{Station} & \textbf{Opponent} & \textbf{Result} & \textbf{Opposing signature} & \textbf{Award} \\
+\midrule
+ & & & & \$\underline{\hspace{1.3cm}} \\
+ & & & & \$\underline{\hspace{1.3cm}} \\
+ & & & & \$\underline{\hspace{1.3cm}} \\
+ & & & & \$\underline{\hspace{1.3cm}} \\
+ & & & & \$\underline{\hspace{1.3cm}} \\
+ & & & & \$\underline{\hspace{1.3cm}} \\
+ & & & & \$\underline{\hspace{1.3cm}} \\
+ & & & & \$\underline{\hspace{1.3cm}} \\
+ & & & & \$\underline{\hspace{1.3cm}} \\
+ & & & & \$\underline{\hspace{1.3cm}} \\
+ & & & & \$\underline{\hspace{1.3cm}} \\
+ & & & & \$\underline{\hspace{1.3cm}} \\
+ & & & & \$\underline{\hspace{1.3cm}} \\
+ & & & & \$\underline{\hspace{1.3cm}} \\
+ & & & & \$\underline{\hspace{1.3cm}} \\
+\midrule
+\multicolumn{4}{@{}r}{\textbf{Mini-game subtotal}} & \textbf{\$\underline{\hspace{1.0cm}}} \\
+\bottomrule
+\end{tabularx}
+\end{labbox}
+
+\vspace{3pt}
+
+\begin{minipage}[t]{0.53\textwidth}
+\vspace{0pt}
+\begin{labbox}{Other Funding}
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}Y R@{}}
+\toprule
+\textbf{Category} & \textbf{Amount} \\
+\midrule
+Hidden discoveries (\$100 each): \underline{\hspace{0.55cm}} finds & \$\underline{\hspace{1.0cm}} \\
+All mini-games completed bonus & \$\underline{\hspace{1.0cm}} \\
+4-player team bonus & \$\underline{\hspace{1.0cm}} \\
+Whale prestige (\$200 each): \underline{\hspace{0.55cm}} whales & \$\underline{\hspace{1.0cm}} \\
+Most Scientifically Plausible & \$\underline{\hspace{1.0cm}} \\
+Best Delivery & \$\underline{\hspace{1.0cm}} \\
+Funniest & \$\underline{\hspace{1.0cm}} \\
+\midrule
+\textbf{Subtotal} & \textbf{\$\underline{\hspace{1.1cm}}} \\
+\bottomrule
+\end{tabularx}
+\end{labbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.44\textwidth}
+\vspace{0pt}
+\begin{labbox}{Endgame Adjustments}
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}Y R@{}}
+\toprule
+\textbf{Adjustment} & \textbf{Amount} \\
+\midrule
+Squid theft received & --\$ \underline{\hspace{0.8cm}} \\
+Squid theft taken from rivals & +\$ \underline{\hspace{0.8cm}} \\
+\midrule
+\textbf{Final total} & \textbf{\$\underline{\hspace{0.8cm}}} \\
+\bottomrule
+\end{tabularx}
+\end{labbox}
+\end{minipage}
+
+\vfill
+\begin{center}
+\footnotesize\color{agencyblue}\textbf{W.E.T. LAB | Internal Use Only}
+\end{center}
+
+\end{document}

@@ -1,0 +1,88 @@
+\documentclass[9pt]{article}
+
+\usepackage[letterpaper,margin=0.22in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\definecolor{agencyblue}{HTML}{005A8B}
+\definecolor{deepsea}{HTML}{143B5D}
+\definecolor{labline}{HTML}{A9BBC8}
+\definecolor{panelbg}{HTML}{F6F8FA}
+\definecolor{titlebg}{HTML}{EAF2F7}
+\definecolor{textgray}{HTML}{2F3B45}
+
+\color{textgray}
+\tcbset{
+  sharp corners,
+  boxrule=0.45pt,
+  colframe=labline,
+  colback=white,
+  left=5pt,
+  right=5pt,
+  top=5pt,
+  bottom=5pt,
+  enhanced
+}
+
+\newcommand{\PromptCard}[2]{%
+\begin{tcolorbox}[
+  height=1.60in,
+  valign=center
+]
+\vfill
+\begin{minipage}[c][1.18in][c]{0.96\linewidth}
+\centering
+{\fontsize{9.2}{10.2}\selectfont\bfseries\color{deepsea} #2\par}
+\end{minipage}
+\vfill
+\end{tcolorbox}%
+}
+
+\begin{document}
+\footnotesize
+
+\begin{tcbraster}[
+  raster columns=5,
+  raster column skip=4pt,
+  raster row skip=4pt
+]
+\PromptCard{01}{Whale breaching}
+\PromptCard{02}{Dolphin doing tricks for fish}
+\PromptCard{03}{A scientist discovering microplastics in everything}
+\PromptCard{04}{Giant squid attacking a submarine}
+\PromptCard{05}{Jacques Cousteau narrating dramatically}
+\PromptCard{06}{A crab aggressively guarding its territory}
+\PromptCard{07}{A fish getting caught in a plastic six-pack ring}
+\PromptCard{08}{A whale accidentally eating plastic}
+\PromptCard{09}{A marine biologist tagging a shark}
+\PromptCard{10}{A dolphin stealing someone's food}
+\PromptCard{11}{A lab experiment going horribly wrong}
+\PromptCard{12}{A squid releasing an ink cloud}
+\PromptCard{13}{A fish trying to swim upstream but failing}
+\PromptCard{14}{A researcher writing notes very seriously}
+\PromptCard{15}{A sea turtle trying to eat a plastic bag}
+\PromptCard{16}{A whale singing}
+\PromptCard{17}{A chaotic reef ecosystem}
+\PromptCard{18}{A diver panicking underwater}
+\PromptCard{19}{A scientist presenting a very confusing graph}
+\PromptCard{20}{Plankton drifting aimlessly}
+\PromptCard{21}{A team celebrating winning funding}
+\PromptCard{22}{A rival lab sabotaging another lab}
+\PromptCard{23}{A dolphin trainer saying ``good dolphin'' repeatedly}
+\PromptCard{24}{A fish evolving legs}
+\PromptCard{25}{A scientist arguing about data}
+\PromptCard{26}{A jellyfish stinging someone}
+\PromptCard{27}{A seal clapping}
+\PromptCard{28}{A researcher discovering something obvious but acting shocked}
+\PromptCard{29}{A marine animal at Burning Man}
+\PromptCard{30}{A whale getting tangled in kelp}
+\end{tcbraster}
+
+\end{document}

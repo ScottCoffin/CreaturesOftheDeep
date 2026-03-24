@@ -1,0 +1,199 @@
+\documentclass[11pt]{extarticle}
+
+\usepackage[a4paper,margin=0.38in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{microtype}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+\usepackage{setspace}
+
+\definecolor{agencyblue}{HTML}{005A8B}
+\definecolor{deepsea}{HTML}{143B5D}
+\definecolor{labline}{HTML}{A9BBC8}
+\definecolor{panelbg}{HTML}{F6F8FA}
+\definecolor{titlebg}{HTML}{EAF2F7}
+\definecolor{textgray}{HTML}{2F3B45}
+\definecolor{alertred}{HTML}{8A2D2D}
+
+\pagecolor{white}
+\pagestyle{empty}
+\color{textgray}
+\setstretch{0.94}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.08}
+\setlist[itemize]{leftmargin=1.0em,labelsep=0.4em,itemsep=0.8pt,topsep=1.2pt,parsep=0pt}
+\setlist[enumerate]{leftmargin=1.15em,labelsep=0.4em,itemsep=0.8pt,topsep=1.2pt,parsep=0pt}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}p{0.16\linewidth}}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\tolerance=1800
+\emergencystretch=8pt
+
+\newtcolorbox{labbox}[2][]{
+  colback=panelbg,
+  colframe=labline,
+  colbacktitle=titlebg,
+  coltitle=deepsea,
+  fonttitle=\bfseries\small,
+  title=\MakeUppercase{#2},
+  boxrule=0.5pt,
+  arc=0pt,
+  left=4pt,
+  right=4pt,
+  top=3pt,
+  bottom=3pt,
+  toptitle=1.5pt,
+  bottomtitle=1.5pt,
+  #1
+}
+
+\newcommand{\checkbox}{\fbox{\rule{0pt}{0.72em}\rule{0.72em}{0pt}}}
+
+\begin{document}
+\footnotesize
+
+\begin{tcolorbox}[
+  colback=white,
+  colframe=deepsea,
+  boxrule=0.9pt,
+  arc=0pt,
+  left=7pt,
+  right=7pt,
+  top=5pt,
+  bottom=4pt
+]
+\begin{minipage}[c]{0.13\textwidth}
+\centering
+\includegraphics[width=\linewidth]{../images/logo_small.png}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.83\textwidth}
+{\scriptsize\textbf{\color{agencyblue}W.E.T. LAB FIELD OPERATIONS UNIT}}\par
+\vspace{3pt}
+{\Large\bfseries\color{deepsea}Back-of-House Run of Show}\par
+\vspace{4pt}
+{\small Host reference | timing, cues, scoring flow, and closeout sequence}
+\end{minipage}
+
+\vspace{3pt}
+{\footnotesize
+\rowcolors{1}{titlebg}{white}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries\color{deepsea}}l Y >{\bfseries\color{deepsea}}l Y@{}}
+Event spine & Intake, mini-games, proposal prep, lightning talks, squid phase, awards & Team size & Labs of 4--5 players \\
+Critical rules & Opposing signatures required for mini-game wins; reviewers cannot score own lab & Funding scale & All values in \$100 increments \\
+\end{tabularx}}
+\end{tcolorbox}
+
+\vspace{2pt}
+
+\begin{minipage}[t]{0.485\textwidth}
+\vspace{0pt}
+\begin{labbox}{Pre-Open Checklist}
+\begin{itemize}
+\item \checkbox\ Identity badges sorted; reviewer dots hidden until proposal phase.
+\item \checkbox\ Team scoring sheets or notebooks distributed to each lab.
+\item \checkbox\ Hidden \$100 discoveries placed; oceanographer clues ready.
+\item \checkbox\ All eight stations stocked; props checked before doors.
+\item \checkbox\ Proposal scoring method ready: ballots, pens, and award categories posted.
+\item \checkbox\ Final tally lead assigned for squid theft resolution and winner check.
+\end{itemize}
+\end{labbox}
+
+\begin{labbox}{Opening Speech}
+\small
+``Welcome, researchers, to W.E.T.~LAB Station 744, where the tide is unstable, the plankton are under review, and tonight your lab will fight for funding, glory, and scientific legitimacy. Build your crew, defend your notebook, chase every discovery, and prove that your field team can outswim, outthink, and outpitch every rival in the water. The ocean is watching. Begin the experiment.''
+\end{labbox}
+
+\begin{labbox}{Host Reminders}
+\begin{itemize}
+\item Teams of 4 receive \textbf{+\$150}; log it early so it is not forgotten later.
+\item Data Scientist may call \textbf{Model Overfit} before a mini-game; that match pays double.
+\item Dolphin Trainer requires the team member with the \textbf{Dolphin} role to be the dolphin.
+\item Oceanographers may search for hidden cash during live play.
+\item Whale prestige is worth \textbf{+\$200 per whale} at final scoring.
+\item Squid theft happens \textbf{after} proposal awards and before winner announcement.
+\end{itemize}
+\end{labbox}
+
+\begin{labbox}{Scoring Closeout}
+\begin{enumerate}
+\item Stop station play hard at 9:30 and collect any unresolved match results.
+\item Verify mini-game wins include an opposing signature before counting them.
+\item Add hidden discoveries, team-size bonus, completion bonus, whale prestige, and proposal awards.
+\item Reveal squid phase; each squid steals \textbf{\$200} from one rival lab.
+\item Recalculate totals after all squid transfers are applied.
+\item Double-check top two labs before announcing winners.
+\end{enumerate}
+\end{labbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.505\textwidth}
+\vspace{0pt}
+\begin{labbox}{Live Timeline}
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\color{deepsea}}p{0.18\linewidth}Y@{}}
+\toprule
+\textbf{Time} & \textbf{Run-of-show cue} \\
+\midrule
+7:00 & Doors open. FOH music up, stations visible, badges and notebooks at intake. \\
+8:00 & Icebreaker and identity assignment. Push players into labs of 4--5 and call out the +\$150 adjustment for any 4-player lab. \\
+8:10 & Game explanation. Cover the goal, signature rule, +\$100 completion bonus, hidden cash, talks, and squid endgame. \\
+8:15 & Mini-games begin. Float between stations, keep matches moving, and remind labs to record awards immediately. \\
+9:00 & Five-minute warning for station phase. Encourage any missing stations and check that notebooks are legible. \\
+9:30 & Stop games. Freeze scoring and pivot all labs to proposal prep. \\
+9:30--9:45 & Proposal build window. Reveal peer reviewers now. Enforce under-2-minute talk limit. \\
+9:45--10:00 & Lightning talks and peer review. Reviewers cannot score their own lab. Awards: Plausible \$400, Delivery \$300, Funniest \$200. \\
+10:00--10:15 & Final scoring plus squid phase. Apply all modifiers, then resolve thefts, then announce winner. \\
+10:15--2:15 & Dance party / free social block. Reset stations and archive score sheets. \\
+2:15 & Optional late-night game or bonus activity if the room is still active. \\
+\bottomrule
+\end{tabularx}
+\end{labbox}
+
+\begin{labbox}{Fast Failure Points}
+\begin{itemize}
+\item Missing signatures create disputes; fix those before proposal prep starts.
+\item If a station bottlenecks, redirect teams instead of letting a queue grow.
+\item Keep proposal prep hard-capped at 15 minutes or the whole endgame slips.
+\item Announce squid timing clearly so nobody steals before totals are built.
+\end{itemize}
+\end{labbox}
+
+\begin{labbox}{Award Snapshot}
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}Y R@{}}
+\toprule
+\textbf{Funding source} & \textbf{Value} \\
+\midrule
+Plankton Survival & \$200 \\
+Marine Mammal Relay & \$300 \\
+Baleen Simulator & \$200 \\
+Dolphin Trainer & \$300 \\
+Fish Bowl & \$300 \\
+Snorkel Soccer & \$200 \\
+Specimen Catalog & \$250 \\
+Competitive Feeding & \$200 \\
+All mini-games completed & +\$100 \\
+4-player lab adjustment & +\$150 \\
+Whale prestige & +\$200 each \\
+Hidden discoveries & +\$100 each \\
+Squid theft & \(\pm\$200\) each squid \\
+\bottomrule
+\end{tabularx}
+\end{labbox}
+\end{minipage}
+
+\vfill
+\begin{center}
+\footnotesize\color{agencyblue}\textbf{W.E.T. LAB | Back-of-House Operations | Internal Use Only}
+\end{center}
+
+\end{document}
