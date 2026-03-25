@@ -1,4 +1,4 @@
-\documentclass[11pt]{extarticle}
+\documentclass[12pt]{extarticle}
 
 \usepackage[a4paper,margin=0.38in]{geometry}
 \usepackage[T1]{fontenc}
@@ -34,6 +34,7 @@
 \setlist[enumerate]{leftmargin=1.15em,labelsep=0.4em,itemsep=0.8pt,topsep=1.2pt,parsep=0pt}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}p{0.16\linewidth}}
+\newcolumntype{M}[1]{>{\raggedright\arraybackslash}m{#1}}
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
 \tolerance=1800
@@ -99,12 +100,11 @@ Critical rules & Opposing signatures required for mini-game wins; reviewers cann
 \vspace{0pt}
 \begin{labbox}{Pre-Open Checklist}
 \begin{itemize}
-\item \checkbox\ Identity badges sorted; reviewer dots hidden until proposal phase.
-\item \checkbox\ Team scoring sheets or notebooks distributed to each lab.
-\item \checkbox\ Hidden \$100 discoveries placed; oceanographer clues ready.
+\item \checkbox\ Identity badges sorted; reviewer dots hidden.
+\item \checkbox\ Team notebooks distributed to each lab.
+\item \checkbox\ Hidden \$100 placed; oceanographer clues ready.
 \item \checkbox\ All eight stations stocked; props checked before doors.
-\item \checkbox\ Proposal scoring method ready: ballots, pens, and award categories posted.
-\item \checkbox\ Final tally lead assigned for squid theft resolution and winner check.
+\item \checkbox\ Proposal scoring method ready + pens.
 \end{itemize}
 \end{labbox}
 
@@ -115,10 +115,10 @@ Critical rules & Opposing signatures required for mini-game wins; reviewers cann
 
 \begin{labbox}{Host Reminders}
 \begin{itemize}
-\item Teams of 4 receive \textbf{+\$150}; log it early so it is not forgotten later.
+\item Teams of 4 receive \textbf{+\$150}; log it early..
 \item Data Scientist may call \textbf{Model Overfit} before a mini-game; that match pays double.
 \item Dolphin Trainer requires the team member with the \textbf{Dolphin} role to be the dolphin.
-\item Oceanographers may search for hidden cash during live play.
+\item Oceanographers may search for hidden cash during play.
 \item Whale prestige is worth \textbf{+\$200 per whale} at final scoring.
 \item Squid theft happens \textbf{after} proposal awards and before winner announcement.
 \end{itemize}
@@ -139,7 +139,7 @@ Critical rules & Opposing signatures required for mini-game wins; reviewers cann
 \vspace{0pt}
 \begin{labbox}{Live Timeline}
 \scriptsize
-\begin{tabularx}{\linewidth}{@{}>{\bfseries\color{deepsea}}p{0.18\linewidth}Y@{}}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries\color{deepsea}}M{0.18\linewidth} M{\dimexpr\linewidth-0.18\linewidth-2\tabcolsep\relax}@{}}
 \toprule
 \textbf{Time} & \textbf{Run-of-show cue} \\
 \midrule
@@ -148,23 +148,14 @@ Critical rules & Opposing signatures required for mini-game wins; reviewers cann
 8:10 & Game explanation. Cover the goal, signature rule, +\$100 completion bonus, hidden cash, talks, and squid endgame. \\
 8:15 & Mini-games begin. Float between stations, keep matches moving, and remind labs to record awards immediately. \\
 9:00 & Five-minute warning for station phase. Encourage any missing stations and check that notebooks are legible. \\
-9:30 & Stop games. Freeze scoring and pivot all labs to proposal prep. \\
+9:30 & Stop games. Pivot all labs to proposal prep. \\
 9:30--9:45 & Proposal build window. Reveal peer reviewers now. Enforce under-2-minute talk limit. \\
-9:45--10:00 & Lightning talks and peer review. Reviewers cannot score their own lab. Awards: Plausible \$400, Delivery \$300, Funniest \$200. \\
+9:45--10:00 & Lightning talks and peer review. Reviewers cannot score their own lab. \\
 10:00--10:15 & Final scoring plus squid phase. Apply all modifiers, then resolve thefts, then announce winner. \\
 10:15--2:15 & Dance party / free social block. Reset stations and archive score sheets. \\
-2:15 & Optional late-night game or bonus activity if the room is still active. \\
+2:15 & Optional late-night game or bonus activity. \\
 \bottomrule
 \end{tabularx}
-\end{labbox}
-
-\begin{labbox}{Fast Failure Points}
-\begin{itemize}
-\item Missing signatures create disputes; fix those before proposal prep starts.
-\item If a station bottlenecks, redirect teams instead of letting a queue grow.
-\item Keep proposal prep hard-capped at 15 minutes or the whole endgame slips.
-\item Announce squid timing clearly so nobody steals before totals are built.
-\end{itemize}
 \end{labbox}
 
 \begin{labbox}{Award Snapshot}

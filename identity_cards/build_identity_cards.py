@@ -1,5 +1,12 @@
+#### BUILD WITH:
+# >> python identity_cards\build_identity_cards.py
+# >> python identity_cards\build_identity_cards.py --sixup-only
+# >> latexmk -cd -pdf -interaction=nonstopmode -halt-on-error identity_cards\identity_cards_sheet.tex
+
+
 from __future__ import annotations
 
+import argparse
 import re
 import subprocess
 import textwrap
@@ -33,6 +40,7 @@ CLASS_ABILITIES = {
     "Dolphin": "Acts as the team's dolphin during Dolphin Trainer and may respond only to approved cue phrases.",
     "Whale": "Grants the team a $200 prestige advantage for each whale assigned to the roster.",
     "Squid": "At the end of the game, may siphon $200 from any rival team.",
+    "Admin": "May alter rules, reassign specimens, redistribute funding, and declare any outcome scientifically necessary."
 }
 
 SCIENTIFIC_NAMES = [
@@ -594,14 +602,27 @@ def generate_tex_sixup(records: list[SlideRecord]) -> None:
     temp_tex.replace(TEX_OUT_SIX)
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Generate identity card TeX sources and image assets.")
+    parser.add_argument(
+        "--sixup-only",
+        action="store_true",
+        help="Only regenerate the 6-up sheet TeX file (identity_card_sheet.tex).",
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parse_args()
     ensure_pdf()
     render_slide_pngs()
     slide_w, slide_h, records = extract_records()
     generate_crops(slide_w, slide_h, records)
-    generate_tex(records)
+    if not args.sixup_only:
+        generate_tex(records)
     generate_tex_sixup(records)
-    print(f"Generated {TEX_OUT}")
+    if not args.sixup_only:
+        print(f"Generated {TEX_OUT}")
     print(f"Generated {TEX_OUT_SIX}")
 
 
